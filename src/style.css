@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-top: 14rem;
+  gap: 2rem;
+}
+
+#home h1 {
+  font-size: 6rem;
+  font-family: "Beth Ellen";
+  font-weight: 400;
+}
+
+#home h1 strong {
+  color: #ff5563;
+}
+
+#home p {
+  font-size: 1.75rem;
+  margin-bottom: 8rem;
+  font-family: "Spectral";
+  font-weight: 600;
+}
+
+#home a {
+  color: #ffffff;
+  background-color: #ff5563;
+  margin: auto;
+  text-decoration: none;
+  padding: 1.55rem 3.5rem;
+  border-radius: 1rem;
+  font-size: 1.75rem;
+  font-family: "Spectral";
+  font-weight: 600;
+}
+
+#home a:hover {
+  background-color: #ef2f3f;
+}
+
+#home #bg-img {
+  background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  opacity: 0.2;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+@media (width < 40rem) {
+  html {
+    font-size: 70%;
+  }
+
+  #home {
+    margin-top: 16rem;
+  }
+
+  #home h1 {
+    font-size: 4.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+  }
+
+  #home a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (width < 23rem) {
+    html {
+        font-size: 70%;
+    }
+
+    #home {
+        margin-top: 6rem;
+      }
+    
+      #home h1 {
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+      }
+    
+      #home p {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+      }
+
+      #home a {
+        font-size: 2rem;
+      }
+}
+
+h1,
+p,
+a {
+  animation: appear 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
